@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export default function ZatsubanaComponent() {
   const [theme, setTheme] = useState('ここにテーマが表示されるよ');
@@ -47,9 +48,7 @@ export default function ZatsubanaComponent() {
 
   return (
     <div className="container2">
-      <div className="title">
-        Let's 雑談 about Engineering!
-      </div>
+      <div className="title">Let&apos;s 雑談 about Engineering!</div>
       <div className="container">
         <div id="textDisplay">{theme}</div>
       </div>
@@ -59,7 +58,7 @@ export default function ZatsubanaComponent() {
       </div>
       <div className="container4">
         <a href="https://twitter.com/share?url=https://hibriiiiidge-zatsudan.vercel.app/&text=エンジニア同士での雑談ネタを提供します〜" target="_blank">
-          <img src="/tw.png" alt="Twitter Share Icon" width="50" />
+          <Image src="/tw.png" alt="Twitter Share Icon" width="50" />
         </a>
       </div>
     </div>
